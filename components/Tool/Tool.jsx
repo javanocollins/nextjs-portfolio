@@ -11,7 +11,7 @@ const Tool = ({icon, title}) => {
                 title={title}
                 className="text-white text-8xl mb-4 w-24"
             />
-            {/* <p className="text-white absolute top-14">{title}</p> */}
+            <p className="text-white absolute top-14">{title}</p>
         </div>
     );
 }
