@@ -7,8 +7,9 @@ import Typewriter from "typewriter-effect";
 import Button from "../components/Button/Button";
 import Tool from "../components/Tool/Tool";
 import { toolIcons } from "../utils/utils";
-import { fab, faLaravel } from "@fortawesome/free-brands-svg-icons";
+import { fab, faChrome, faLaravel } from "@fortawesome/free-brands-svg-icons";
 import {
+    faBrush,
     faCheckSquare,
     faCoffee,
     faDatabase,
@@ -75,12 +76,11 @@ export default function Home() {
                     })}
                 </div>
 
-                <div className="About bg-gradient-to-r from-orange-500 to-orange-700">
-                    <About />
+                <div className="About py-16 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
+                    <About devIcon={faChrome} designIcon={faBrush}/>
                 </div>
             </main>
 
-            {/* <footer className={styles.footer}></footer> */}
         </div>
     );
 }
