@@ -3,7 +3,7 @@ import {
     faCoffee,
     faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
-import { fab, faFigma, faLaravel } from "@fortawesome/free-brands-svg-icons";
+import { fab, faDocker, faFigma, faLaravel } from "@fortawesome/free-brands-svg-icons";
 
 export const toolIcons = [
     {
@@ -17,8 +17,8 @@ export const toolIcons = [
         activeColor: "",
     },
     {
-        icon: faLaravel,
-        title: "Laravel",
+        icon: faDocker,
+        title: "Docker",
         activeColor: "",
     },
     {
