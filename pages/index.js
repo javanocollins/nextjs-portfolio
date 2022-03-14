@@ -14,8 +14,8 @@ import {
     faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import About from "../components/About/About";
 library.add(fab, faDatabase);
-
 
 export default function Home() {
     return (
@@ -73,6 +73,10 @@ export default function Home() {
                             />
                         );
                     })}
+                </div>
+
+                <div className="About bg-gradient-to-r from-orange-500 to-orange-700">
+                    <About />
                 </div>
             </main>
 
