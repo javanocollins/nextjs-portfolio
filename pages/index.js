@@ -1,12 +1,10 @@
+// Packages
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import NavBar from "../components/NavBar";
-import styles from "../styles/Home.module.css";
 import Typewriter from "typewriter-effect";
-import Button from "../components/Button/Button";
-import Tool from "../components/Tool/Tool";
-import { toolIcons } from "../utils/utils";
+
+// Font Awesome
 import { fab, faChrome, faLaravel } from "@fortawesome/free-brands-svg-icons";
 import {
     faBrush,
@@ -15,6 +13,17 @@ import {
     faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+
+// Styles
+import styles from "../styles/Home.module.css";
+
+// Components
+import NavBar from "../components/NavBar";
+import Button from "../components/Button/Button";
+import Tool from "../components/Tool/Tool";
+import Specializations from "../components/Specializations/Specializations";
+
+import { toolIcons } from "../utils/utils";
 import About from "../components/About/About";
 library.add(fab, faDatabase);
 
@@ -29,7 +38,7 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className="HomePage-header flex flex-col px-10 items-start justify-center container mx-auto">
+            <header className="HomePage-header flex flex-col px-20 items-start justify-center container mx-auto">
                 <div className="flex text-7xl font-medium mb-1 flex-wrap">
                     <h1 className="">I am Javano Collins.&nbsp;</h1>
                     <Typewriter
@@ -64,23 +73,26 @@ export default function Home() {
                 ></Button>
             </header>
             <main className={styles.main}>
-                <div className="Tools px-12 bg-black h-56 flex items-center justify-around">
+                <div className="Tools px-12 bg-black h-60 py-12 flex items-center justify-around">
                     {toolIcons.map((icon, idx) => {
                         return (
                             <Tool
                                 key={idx}
                                 icon={icon.icon}
                                 title={icon.title}
+                                size={icon.size}
                             />
                         );
                     })}
                 </div>
 
-                <div className="About py-16 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
-                    <About devIcon={faChrome} designIcon={faBrush}/>
+                <div className="Specializations py-16 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
+                    <Specializations devIcon={faChrome} designIcon={faBrush} />
+                </div>
+                <div className="About py-12 px-20">
+                    <About />
                 </div>
             </main>
-
         </div>
     );
 }
