@@ -1,53 +1,30 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core";
+import React from 'react';
+import Link from "next/link";
 
-const About = ({ devIcon, designIcon }) => {
-    const classes = `bg-white w-2/6 h-auto text-center flex flex-col items-center py-12 px-8`;
-    return (
-        <div className="flex justify-center divide-x-2">
-            <div className={`${classes}  rounded-l-3xl divi`}>
-                <FontAwesomeIcon icon={devIcon} className="text-red-600 w-14" />
-                <h2 className="pb-5 text-3xl font-bold">Developer</h2>
+const About = () => {
+  return (
+      <div>
+          <h2 className="text-8xl mb-8 uppercase font-medium text-orange-600">
+              About Me
+          </h2>
 
-                <p className="w-full p-5 text-lg">
-                    I am a Frontend Developer that's always open to learning new
-                    technologies. I ensure that applications are beautiful,
-                    performant, and mobile responsive.
-                </p>
+          <p className="w-4/5 mb-5 text-xl">
+              I'm Javano Collins, a current Software Engineer at{" "}
+              <a href='https://platoalpha.com' target='_blank' className='text-blue-600 font-bold'>Plato Alpha</a> and a graduate of BTVI 🏫 . As a Software
+              Engineer, I have fallen in love with web technologies, and find a
+              academic and career interest in Machine Learning.
+          </p>
+          <p className="w-4/5 text-xl">
+              Additional things about me: <br />
+              I am a boxer, <br />I am an avid reader (subjects: finance,
+              psychology, history, stem) <br />
+              I love marine science and I self-proclaim to be an advocate for
+              environmental health. <br />
+              An additional passion of mine lies in applying technology to
+              marine science to save the ocean.
+          </p>
+      </div>
+  );
+}
 
-                <p className="text-xl text-red-600 font-bold p-2">Tools</p>
-                <ul className="text-lg">
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>React Native</li>
-                    <li>Laravel</li>
-                    <li>Python</li>
-                    <li>MySQL</li>
-                    <li>Docker</li>
-                </ul>
-            </div>
-            <div className={`${classes} rounded-r-3xl`}>
-                <FontAwesomeIcon
-                    icon={designIcon}
-                    className="text-red-600 w-12"
-                />
-                <h2 className="pb-5 text-3xl font-bold">Designer</h2>
-                <p className="w-full p-5 text-lg">
-                    I have an extensive background in graphic design. I
-                    specialize in mobile and web design, logos, flyers, and
-                    business cards.
-                </p>
-
-                <p className="text-xl text-red-600 font-bold p-2">Tools</p>
-                <ul className="text-lg">
-                    <li>Figma</li>
-                    <li>Illustrator</li>
-                    <li>Photoshop</li>
-                </ul>
-            </div>
-        </div>
-    );
-};
-
-export default About;
+export default About
