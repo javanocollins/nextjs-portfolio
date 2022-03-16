@@ -66,11 +66,11 @@ export default function Home() {
 
                 <p className="mb-3">I specialize in Web Development.</p>
 
-                <Button
+                {/* <Button
                     link="/dev-work"
                     title="View My Work"
                     activeColor="#47E5BC"
-                ></Button>
+                ></Button> */}
             </header>
             <main className={styles.main}>
                 <div className="Tools px-12 bg-black h-60 py-12 flex items-center justify-around">
@@ -81,15 +81,16 @@ export default function Home() {
                                 icon={icon.icon}
                                 title={icon.title}
                                 size={icon.size}
+                                activeColor={icon.activeColor}
                             />
                         );
                     })}
                 </div>
 
-                <div className="Specializations py-16 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
+                <div className="Specializations py-20 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
                     <Specializations devIcon={faChrome} designIcon={faBrush} />
                 </div>
-                <div className="About py-12 px-20">
+                <div className="About py-20 px-20">
                     <About />
                 </div>
             </main>

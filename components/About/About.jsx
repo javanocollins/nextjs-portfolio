@@ -4,7 +4,7 @@ import Link from "next/link";
 const About = () => {
   return (
       <div>
-          <h2 className="text-8xl mb-8 uppercase font-medium text-orange-600">
+          <h2 className="text-6xl mb-8 uppercase font-medium text-orange-600">
               About Me
           </h2>
 

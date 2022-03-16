@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const Specializations = ({ devIcon, designIcon }) => {
-    const classes = `bg-white w-2/6 h-auto text-center flex flex-col items-center py-12 px-8`;
+    const classes = `bg-white w-2/6 h-auto text-center flex flex-col items-center py-20 px-8`;
     return (
         <div className="flex justify-center divide-x-2">
             <div className={`${classes}  rounded-l-3xl divi`}>
@@ -30,7 +30,7 @@ const Specializations = ({ devIcon, designIcon }) => {
             <div className={`${classes} rounded-r-3xl`}>
                 <FontAwesomeIcon
                     icon={designIcon}
-                    className="text-red-600 w-12"
+                    className="text-red-600 w-20"
                 />
                 <h2 className="pb-5 text-3xl font-bold">Designer</h2>
                 <p className="w-full p-5 text-lg">

@@ -1,21 +1,23 @@
-import React from 'react';
+import React from "react";
 
 // Package imports
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
-const Tool = ({icon, title, size}) => {
+
+const Tool = ({ icon, title, size, activeColor }) => {
     return (
-        <div className="text-center flex flex-col items-center justify-center relative">
+        <div
+            className={`hover:text-${activeColor} text-white text-center flex flex-col items-center justify-center relative`}
+        >
             <FontAwesomeIcon
                 icon={icon}
                 title={title}
-                className={`${size} text-white text-8xl mb-4 -bottom-12 absolute`}
+                className={`text-8xl mb-4 -bottom-12 absolute`}
             />
-            <p className="text-white text-xl absolute top-14 uppercase">
-                {title}
-            </p>
+            <p className={`text-xl absolute top-14 uppercase`}>{title}</p>
         </div>
     );
-}
+};
 
-export default Tool
+export default Tool;
