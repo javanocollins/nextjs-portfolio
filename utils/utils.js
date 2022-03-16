@@ -18,12 +18,12 @@ export const toolIcons = [
         size: "w-24",
         activeColor: "js",
     },
-    // {
-    //     icon: faLaravel,
-    //     title: "Laravel",
-    //     size: "w-24",
-    //     activeColor: "laravel",
-    // },
+    {
+        icon: faLaravel,
+        title: "Laravel",
+        size: "w-24",
+        activeColor: "laravel",
+    },
     {
         icon: faDocker,
         size: "w-32",

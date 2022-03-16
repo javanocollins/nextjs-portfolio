@@ -5,16 +5,16 @@ module.exports = {
     ],
     theme: {
         extend: {
-            // colors: {
-            //     react: "#5CCFEE",
-            //     js: "#EAD41C",
-            //     laravel: "#E94E43",
-            //     docker: "#228EE1",
-            //     figma: "#09C47D",
-            //     python: "#F2C33E",
-            //     node: "#79B301",
-            //     mysql: "#D88700",
-            // },
+            colors: {
+                react: "#5CCFEE",
+                js: "#EAD41C",
+                laravel: "#E94E43",
+                docker: "#228EE1",
+                figma: "#09C47D",
+                python: "#F2C33E",
+                node: "#79B301",
+                mysql: "#D88700",
+            },
         },
     },
     plugins: [],
