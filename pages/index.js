@@ -25,6 +25,7 @@ import Specializations from "../components/Specializations/Specializations";
 
 import { toolIcons } from "../utils/utils";
 import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
 library.add(fab, faDatabase);
 
 export default function Home() {
@@ -38,30 +39,33 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className="HomePage-header flex flex-col px-20 items-start justify-center container mx-auto">
+            <header
+                className={`${styles.HomePageHeader} flex flex-col px-20 items-start justify-center container mx-auto`}
+            >
                 <div className="flex text-7xl font-medium mb-1 flex-wrap">
                     <h1 className="">I am Javano Collins.&nbsp;</h1>
-                    <Typewriter
-                        className="Typewriter"
-                        onInit={(typewriter) => {
-                            typewriter
-                                .typeString(
-                                    '<span style="color: #F44006;">Software Engineer.</span>'
-                                )
-                                .pauseFor(2500)
-                                .deleteAll()
-                                .typeString(
-                                    '<span style="color: #F44006;">UI/UX Designer.</span>'
-                                )
-                                .pauseFor(2500)
-                                .deleteAll()
-                                .start();
-                        }}
-                        options={{
-                            autoStart: true,
-                            loop: true,
-                        }}
-                    />
+                    <div className={`${styles.TypeWriter}`}>
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString(
+                                        '<span style="color: #F44006;">Software Engineer.</span>'
+                                    )
+                                    .pauseFor(2500)
+                                    .deleteAll()
+                                    .typeString(
+                                        '<span style="color: #F44006;">UI/UX Designer.</span>'
+                                    )
+                                    .pauseFor(2500)
+                                    .deleteAll()
+                                    .start();
+                            }}
+                            options={{
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
+                    </div>
                 </div>
 
                 <p className="mb-3">I specialize in Web Development.</p>
@@ -73,7 +77,9 @@ export default function Home() {
                 ></Button>
             </header>
             <main className={styles.main}>
-                <div className="Tools px-12 bg-black h-60 py-12 flex items-center justify-around">
+                <div
+                    className={`${styles.Tools} Tools px-12 bg-black h-60 py-12 flex items-center justify-around`}
+                >
                     {toolIcons.map((icon, idx) => {
                         return (
                             <Tool
@@ -87,7 +93,7 @@ export default function Home() {
                     })}
                 </div>
 
-                <div className="Specializations py-20 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
+                <div className="Specializations-container py-20 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
                     <Specializations devIcon={faChrome} designIcon={faBrush} />
                 </div>
                 <div

@@ -2,12 +2,20 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core";
 
+// Styles
+import styles from './Specializations.module.css';
+
 const Specializations = ({ devIcon, designIcon }) => {
-    const classes = `bg-white w-2/6 h-auto text-center flex flex-col items-center py-20 px-8`;
+    const classes = `bg-white h-auto text-center flex flex-col items-center py-20 px-8`;
     return (
-        <div className="flex justify-center divide-x-2">
-            <div className={`${classes}  rounded-l-3xl divi`}>
-                <FontAwesomeIcon icon={devIcon} className="text-red-600 w-14" />
+        <div
+            className={`${styles.Specializations} Specializations grid grid-cols-2 w-3/5 justify-center divide-x-2`}
+        >
+            <div className={`${classes} ${styles.box}  rounded-l-3xl`}>
+                <FontAwesomeIcon
+                    icon={devIcon}
+                    className="text-red-600 text-5xl mb-3"
+                />
                 <h2 className="pb-5 text-3xl font-bold">Developer</h2>
 
                 <p className="w-full p-5 text-lg">
@@ -27,10 +35,10 @@ const Specializations = ({ devIcon, designIcon }) => {
                     <li>Docker</li>
                 </ul>
             </div>
-            <div className={`${classes} rounded-r-3xl`}>
+            <div className={`${styles.box} ${classes} rounded-r-3xl`}>
                 <FontAwesomeIcon
                     icon={designIcon}
-                    className="text-red-600 w-20"
+                    className="text-red-600 text-5xl mb-3"
                 />
                 <h2 className="pb-5 text-3xl font-bold">Designer</h2>
                 <p className="w-full p-5 text-lg">

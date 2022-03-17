@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from "next/link";
 
+import styles from "./About.module.css";
+
 const About = () => {
   return (
       <div>
@@ -8,7 +10,7 @@ const About = () => {
               About Me
           </h2>
 
-          <p className="w-4/5 mb-5 text-xl">
+          <p className="mb-5 text-xl">
               I'm Javano Collins, a current Software Engineer at{" "}
               <a
                   href="https://platoalpha.com"
@@ -29,7 +31,7 @@ const About = () => {
               technologies, and find a academic and career interest in Machine
               Learning.
           </p>
-          <p className="w-4/5 text-xl">
+          <p className="text-xl">
               Additional things about me: <br />
               I am a boxer, <br />I am an avid reader (subjects: finance,
               psychology, history, stem) <br />
