@@ -90,8 +90,11 @@ export default function Home() {
                 <div className="Specializations py-20 flex justify-center items-center bg-gradient-to-r from-orange-500 to-orange-700">
                     <Specializations devIcon={faChrome} designIcon={faBrush} />
                 </div>
-                <div className="About bg-gray-800 text-white py-20 px-20">
+                <div
+                    className={`${styles.AboutContainer} grid grid-cols-2 gap-32 justify-center bg-gray-800 text-white py-20 px-20`}
+                >
                     <About />
+                    <Contact />
                 </div>
             </main>
         </div>
