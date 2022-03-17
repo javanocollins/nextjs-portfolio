@@ -1,3 +1,29 @@
-.HomePage-header {
-    height: 90vh;
+.HomePageHeader {
+    height: 95vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .Tools {
+        display: none;
+    }
+
+    .TypeWriter {
+        display: none;
+    }
+
+    .AboutContainer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding: 5rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Tools {
+        display: none;
+    }
+
+    .TypeWriter {
+        display: none;
+    }
 }

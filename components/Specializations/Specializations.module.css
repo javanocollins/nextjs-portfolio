@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+    .Specializations {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        width: 90%;
+    }
+
+    .box {
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+}
