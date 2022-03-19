@@ -27,7 +27,7 @@ const Logos = () => {
         <div className="grid grid-cols-3 gap-x-2 gap-y-1">
             {logos.map((logo, idx) => {
                 return (
-                    <div>
+                    <div key={idx}>
                         <Image src={logo} width={360} height={220} />
                     </div>
                 );
