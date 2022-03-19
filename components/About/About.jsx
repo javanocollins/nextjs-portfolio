@@ -15,6 +15,7 @@ const About = () => {
               <a
                   href="https://platoalpha.com"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-blue-600 font-bold"
               >
                   Plato Alpha
@@ -23,6 +24,7 @@ const About = () => {
               <a
                   href="https://vc.btvi.edu.bs"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-orange-600 font-bold"
               >
                   BTVI 🏫

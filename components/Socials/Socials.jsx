@@ -30,8 +30,9 @@ const Socials = () => {
                   className="pr-6"
                   href={icon.link}
                   target="_blank"
+                  rel="noreferrer"
               >
-                  <FontAwesomeIcon icon={icon.icon} className="w-8"/>
+                  <FontAwesomeIcon icon={icon.icon} className="w-8" />
               </a>
           ))}
       </div>
