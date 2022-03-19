@@ -28,7 +28,7 @@ const Logos = () => {
             {logos.map((logo, idx) => {
                 return (
                     <div key={idx}>
-                        <Image src={logo} width={360} height={220} />
+                        <Image src={logo} width={360} height={220} alt="Design logos" />
                     </div>
                 );
             })}

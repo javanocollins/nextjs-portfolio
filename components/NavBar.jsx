@@ -11,6 +11,7 @@ const NavBar = () => {
                 <Image
                     className="cursor-pointer"
                     src={logo}
+                    alt="JD Logo"
                     width={50}
                     height={50}
                 />
