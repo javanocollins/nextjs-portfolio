@@ -25,11 +25,11 @@ const Index = () => {
                 </h1>
                 <p className="text-center">Have a look at my designs.</p>
             </header>
-            <main className="flex px-20 py-20 w-full">
-                <div className="flex flex-col mr-20">
+            <main className="flex flex-col px-20 py-20 w-full">
+                <div className="flex justify-center items-center w-full gap-x-3 mr-20">
                     <p
                         className={`text-4xl mb-8 cursor-pointer ${
-                            view === 0 ? "font-bold" : ""
+                            view === 0 ? "font-bold" : "opacity-50"
                         }`}
                         onClick={() => setView(0)}
                     >
@@ -37,14 +37,16 @@ const Index = () => {
                     </p>
                     <p
                         className={`text-4xl mb-8 cursor-pointer ${
-                            view === 1 ? "font-bold" : ""
+                            view === 1 ? "font-bold" : "opacity-50"
                         }`}
                         onClick={() => setView(1)}
                     >
                         Web Designs
                     </p>
                 </div>
-                {view === 0 && <Logos />}
+                <div className="flex justify-center">
+                    {view === 0 && <Logos />}
+                </div>
                 {view === 1 && <WebDesigns />}
             </main>
         </div>
