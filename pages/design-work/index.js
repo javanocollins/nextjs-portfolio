@@ -19,13 +19,13 @@ const Index = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className="px-20 mt-20">
-                <h1 className="text-7xl mb-3 text-orange-500 text-center">
+            <header className="px-0 md:px-20 mt-20">
+                <h1 className="text-5xl md:text-7xl mb-3 text-orange-500 text-center">
                     Design Work
                 </h1>
                 <p className="text-center">Have a look at my designs.</p>
             </header>
-            <main className="flex flex-col px-20 py-20 w-full">
+            <main className="flex flex-col px-0 md:px-16 py-20 w-full">
                 <div className="flex justify-center items-center w-full gap-x-3 mr-20">
                     <p
                         className={`text-4xl mb-8 cursor-pointer ${
