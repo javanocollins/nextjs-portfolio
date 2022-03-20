@@ -24,11 +24,11 @@ const Logos = () => {
         logoNine,
     ];
     return (
-        <div className="grid grid-cols-3 gap-x-2 gap-y-1">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-2 gap-y-1">
             {logos.map((logo, idx) => {
                 return (
                     <div key={idx}>
-                        <Image src={logo} width={360} height={220} alt="Design logos" />
+                        <Image src={logo} width={380} height={240} alt="Design logos" />
                     </div>
                 );
             })}
