@@ -1,0 +1,41 @@
+.ToolDiv {
+    transform: scale(1.02);
+    transition: all .2s;
+}
+
+.ToolDiv:hover {
+    transform: scale(.98);
+    transition: all .2s;
+}
+
+.React:hover {
+    color: #5ccfee;
+}
+
+.JavaScript:hover {
+    color: #ead41c;
+}
+
+.Laravel:hover {
+    color: #e94e43;
+}
+
+.Docker:hover {
+    color: #228ee1;
+}
+
+.Figma:hover {
+    color: #09c47d;
+}
+
+.Python:hover {
+    color: #f2c33e;
+}
+
+.Node:hover {
+    color: #79b301;
+}
+
+.MySQL:hover {
+    color: #d88700;
+}

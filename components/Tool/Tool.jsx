@@ -4,11 +4,13 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
+// Styles
+import styles from "./Tool.module.css";
 
 const Tool = ({ icon, title, size, activeColor }) => {
     return (
         <div
-            className={`hover:text-${activeColor} text-white text-center flex flex-col items-center justify-center relative`}
+            className={`${styles[title]} ${styles.ToolDiv} text-white text-center flex flex-col items-center justify-center relative`}
         >
             <FontAwesomeIcon
                 icon={icon}
