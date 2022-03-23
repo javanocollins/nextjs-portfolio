@@ -4,7 +4,6 @@ import Head from "next/head";
 // Styles
 import styles from "../../styles/Home.module.css";
 
-
 const Index = () => {
     const { view, setView } = useState(0);
     return (
@@ -17,15 +16,63 @@ const Index = () => {
                 />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <header className="px-20 mt-20 mb-16">
-                <h1 className="text-7xl mb-3 text-orange-500">Dev Work</h1>
-                <p>Have a look at my development work.</p>
+            <header className="px-20 mt-20 mb-16 text-center">
+                <h1 className="text-7xl mb-3 text-orange-500 ">Dev Work</h1>
+                <p>Have a look at my development experience.</p>
             </header>
-            <main className="px-20">
-
+            <main className="px-20 pb-20">
+                <div className="flex flex-col justify-center w-1/3">
+                    <h2 className="text-3xl mb-5">
+                        Software Engineer @
+                        <a
+                            href="https://platoalpha.com"
+                            className="text-blue-600 font-bold"
+                            target="_blank"
+                        >
+                            Plato Alpha
+                        </a>
+                    </h2>
+                    <div>
+                        <div className="mb-5">
+                            <a
+                                className="font-bold text-2xl"
+                                href="https://www.triblockhr.com/"
+                                target="_blank"
+                            >
+                                triblock HR
+                            </a>
+                            <p className="text-lg mt-2">
+                                > Developed document management, employee
+                                allowances.
+                            </p>
+                        </div>
+                        <div className="mb-5">
+                            <a
+                                className="font-bold text-2xl"
+                                href="https://covidtesting.doctorshosp.com/login"
+                                target="_blank"
+                            >
+                                Doctors Hospital COVID19 Testing Platform
+                            </a>
+                            <p className="text-lg mt-2">
+                                > Developed initial API payment services
+                                structure.
+                            </p>
+                            <p className="text-lg mt-2">
+                                > Developed application activity logs.
+                            </p>
+                            <p className="text-lg mt-2">
+                                > Developed user verification.
+                            </p>
+                            <p className="text-lg mt-2">
+                                > Developed email templates and logic to send to end user (appointments, user verification, test results).
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     );
 };
 
-export default Index
+export default Index;
