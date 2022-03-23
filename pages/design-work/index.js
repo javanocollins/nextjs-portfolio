@@ -45,12 +45,12 @@ const Index = () => {
                     </p>
                 </div>
                 {view === 0 && (
-                    <div className="flex justify-center bg-gray-800 py-20">
+                    <div className="flex justify-center bg-gray-100 py-20">
                         <WebDesigns />
                     </div>
                 )}
                 {view === 1 && (
-                    <div className="flex justify-center bg-gray-800 py-20">
+                    <div className="flex justify-center py-20">
                         <Logos />
                     </div>
                 )}
