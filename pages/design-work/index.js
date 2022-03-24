@@ -10,7 +10,7 @@ const Index = () => {
     const [view, setView] = useState(0);
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} bg-bgColor`}>
             <Head>
                 <title>Javano Collins | Design Work</title>
                 <meta
@@ -19,14 +19,14 @@ const Index = () => {
                 />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <header className="px-0 md:px-20 mt-20">
+            <header className="px-0 md:px-20 pt-20">
                 <h1 className="text-5xl md:text-7xl mb-3 text-orange-500 text-center">
                     Design Work
                 </h1>
-                <p className="text-center">Have a look at my designs.</p>
+                <p className="text-center text-white">Have a look at my designs.</p>
             </header>
-            <main className="flex flex-col px-0 md:px-16 py-20">
-                <div className="flex justify-center items-center gap-x-3 mr-20">
+            <main className="flex flex-col px-0 md:px-16 pt-20">
+                <div className="flex justify-center items-center gap-x-3 mr-20 text-white">
                     <p
                         className={`text-4xl mb-8 cursor-pointer ${
                             view === 0 ? "font-bold" : "opacity-50"
@@ -45,7 +45,7 @@ const Index = () => {
                     </p>
                 </div>
                 {view === 0 && (
-                    <div className="flex justify-center bg-gray-100 py-20">
+                    <div className="flex justify-center  py-20">
                         <WebDesigns />
                     </div>
                 )}
