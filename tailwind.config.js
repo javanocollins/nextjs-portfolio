@@ -14,6 +14,7 @@ module.exports = {
                 python: "#F2C33E",
                 node: "#79B301",
                 mysql: "#D88700",
+                bgColor: "#181A1B",
             },
         },
     },

@@ -7,8 +7,8 @@ import SwitchBtn from "./SwitchBtn/SwitchBtn";
 
 const NavBar = () => {
     return (
-        <nav className="container mx-auto flex px-20 items-center justify-between pt-7 gap-8">
-            <div className="flex items-center gap-8">
+        <nav className="container bg-bgColor mx-auto flex px-20 items-center justify-between pt-7 gap-8">
+            <div className="flex items-center text-white gap-8">
                 <Link href="/">
                     <Image
                         className="cursor-pointer"
@@ -22,8 +22,6 @@ const NavBar = () => {
                 <Link href="/dev-work">Dev Work</Link>
                 <Link href="/design-work">Design Work</Link>
             </div>
-
-            <SwitchBtn />
         </nav>
     );
 };
