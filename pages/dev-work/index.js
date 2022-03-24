@@ -30,6 +30,7 @@ const Index = () => {
                             href="https://platoalpha.com"
                             className="text-blue-600 font-bold"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             Plato Alpha
                         </a>
@@ -40,6 +41,7 @@ const Index = () => {
                                 className="font-bold text-2xl text-orange-500"
                                 href="https://www.triblockhr.com/"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 triblock HR
                             </a>
@@ -55,6 +57,7 @@ const Index = () => {
                                 className="font-bold text-2xl text-orange-500"
                                 href="https://covidtesting.doctorshosp.com/login"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 Doctors Hospital COVID19 Testing Platform
                             </a>
