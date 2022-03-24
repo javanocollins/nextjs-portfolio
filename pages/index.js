@@ -40,10 +40,10 @@ export default function Home() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <header
-                className={`${styles.HomePageHeader} flex flex-col px-20 items-start justify-center container mx-auto`}
+                className={`${styles.HomePageHeader} bg-bgColor flex flex-col px-20 items-start justify-center container mx-auto`}
             >
                 <div className="flex text-7xl font-medium mb-1 flex-wrap">
-                    <h1 className="">I am Javano Collins.&nbsp;</h1>
+                    <h1 className="text-white">I am Javano Collins.&nbsp;</h1>
                     <div className={`${styles.TypeWriter}`}>
                         <Typewriter
                             onInit={(typewriter) => {
@@ -68,7 +68,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <p className="mb-3">I specialize in Web Development.</p>
+                <p className="mb-3 text-white">I specialize in Web Development.</p>
 
                 <Button
                     link="/dev-work"

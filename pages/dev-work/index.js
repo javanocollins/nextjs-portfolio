@@ -7,7 +7,7 @@ import styles from "../../styles/Home.module.css";
 const Index = () => {
     const { view, setView } = useState(0);
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} bg-bgColor`}>
             <Head>
                 <title>Javano Collins | Dev Work</title>
                 <meta
@@ -16,12 +16,14 @@ const Index = () => {
                 />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <header className="px-20 mt-20 mb-16 text-center">
-                <h1 className="text-7xl mb-3 text-orange-500 ">Dev Work</h1>
-                <p>Have a look at my development experience.</p>
+            <header className="px-20 pt-20 mb-16 text-center">
+                <h1 className="text-7xl mb-3 text-orange-500">Dev Work</h1>
+                <p className="text-white">
+                    Have a look at my development experience.
+                </p>
             </header>
             <main className="px-20 pb-20">
-                <div className="flex flex-col justify-center w-1/3">
+                <div className="flex flex-col justify-center w-1/2 text-white">
                     <h2 className="text-3xl mb-5">
                         Software Engineer @
                         <a
@@ -35,20 +37,22 @@ const Index = () => {
                     <div>
                         <div className="mb-5">
                             <a
-                                className="font-bold text-2xl"
+                                className="font-bold text-2xl text-orange-500"
                                 href="https://www.triblockhr.com/"
                                 target="_blank"
                             >
                                 triblock HR
                             </a>
                             <p className="text-lg mt-2">
-                                > Developed document management, employee
-                                allowances.
+                                > Developed document management that allows HR administrators to fully manage company and employee documents.
+                            </p>
+                            <p className="text-lg mt-2">
+                                > Developed employee allowance feature.
                             </p>
                         </div>
                         <div className="mb-5">
                             <a
-                                className="font-bold text-2xl"
+                                className="font-bold text-2xl text-orange-500"
                                 href="https://covidtesting.doctorshosp.com/login"
                                 target="_blank"
                             >
@@ -65,7 +69,15 @@ const Index = () => {
                                 > Developed user verification.
                             </p>
                             <p className="text-lg mt-2">
-                                > Developed email templates and logic to send to end user (appointments, user verification, test results).
+                                > Developed email templates and logic to send to
+                                end user (appointments, user verification, test
+                                results).
+                            </p>
+                            <p className="text-lg mt-2">
+                                > Developed integrated calendar that enables administrators to view all booked appointments on a calendar.
+                            </p>
+                            <p className="text-lg mt-2">
+                                > Developed UI error handling using Yup validations.
                             </p>
                         </div>
                     </div>
