@@ -23,14 +23,13 @@ const WebDesigns = ({ images, classes }) => {
     }
 
     return (
-        <div className="grid grid-cols-2 gap-x-20">
+        <div
+            className={`${styles.WebDesignContainer} grid lg:grid-cols-2 gap-x-20`}
+        >
             <div className="design-container">
                 {headphones.map((item, idx) => {
                     return (
-                        <div
-                            key={idx}
-                            className={`${styles[classNames[idx]]}`}
-                        >
+                        <div key={idx} className={`${styles[classNames[idx]]}`}>
                             <Image
                                 src={item}
                                 width={dimension.width}

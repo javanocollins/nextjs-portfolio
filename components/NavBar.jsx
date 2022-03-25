@@ -7,7 +7,7 @@ import SwitchBtn from "./SwitchBtn/SwitchBtn";
 
 const NavBar = () => {
     return (
-        <nav className="container bg-bgColor mx-auto flex px-20 items-center justify-between pt-7 gap-8">
+        <nav className="bg-bgColor mx-auto flex lg:px-20 px-12 items-center justify-between pt-7 gap-8">
             <div className="flex items-center text-white gap-8">
                 <Link href="/">
                     <Image

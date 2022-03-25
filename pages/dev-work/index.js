@@ -7,7 +7,7 @@ import styles from "../../styles/Home.module.css";
 const Index = () => {
     const { view, setView } = useState(0);
     return (
-        <div className={`${styles.container} bg-bgColor`}>
+        <div className={`bg-bgColor`}>
             <Head>
                 <title>Javano Collins | Dev Work</title>
                 <meta
@@ -16,14 +16,14 @@ const Index = () => {
                 />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <header className="px-20 pt-20 mb-16 text-center">
-                <h1 className="text-7xl mb-3 text-orange-500">Dev Work</h1>
+            <header className="px-20 pt-20 lg:mb-16 mb-5 text-center">
+                <h1 className="lg:text-7xl text-6xl mb-3 text-orange-500">Dev Work</h1>
                 <p className="text-white">
                     Have a look at my development experience.
                 </p>
             </header>
-            <main className="px-20 pb-20">
-                <div className="flex flex-col justify-center w-1/2 text-white">
+            <main className="lg:p-20 p-12">
+                <div className="flex flex-col justify-center lg:w-1/2 w-full text-white">
                     <h2 className="text-3xl mb-5">
                         Software Engineer @
                         <a

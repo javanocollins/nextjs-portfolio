@@ -14,7 +14,7 @@ const Button = ({ link, title, activeColor }) => {
     return (
         <Link href={`${link}`}>
             <ButtonStyle
-                className={`bg-gray-700 p-4 text-sm text-white`}
+                className={`bg-gray-700 lg:p-4 p-3 text-sm text-white`}
                 hoverColor={activeColor}
             >
                 {title}
