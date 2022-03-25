@@ -19,6 +19,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .HomePageHeader {
+    height: 75vh;
+}
+
     .Tools {
         display: none;
     }
