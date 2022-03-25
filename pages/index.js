@@ -28,6 +28,7 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 library.add(fab, faDatabase);
 
+import hello from "../images/hello.png"
 export default function Home() {
     return (
         <div className={styles.container}>
@@ -40,10 +41,11 @@ export default function Home() {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <header
-                className={`${styles.HomePageHeader} bg-bgColor flex flex-col px-20 items-start justify-center container mx-auto`}
+                className={`${styles.HomePageHeader} bg-bgColor flex flex-col lg:px-20 px-12 items-start justify-center mx-auto`}
             >
-                <div className="flex text-7xl font-medium mb-1 flex-wrap">
-                    <h1 className="text-white">I am Javano Collins.&nbsp;</h1>
+                <Image src={hello} width={80} height={40}/>
+                <div className="flex lg:text-7xl text-6xl font-medium mb-1 flex-wrap">
+                    <h1 className="text-white">I'm Javano Collins.&nbsp;</h1>
                     <div className={`${styles.TypeWriter}`}>
                         <Typewriter
                             onInit={(typewriter) => {
