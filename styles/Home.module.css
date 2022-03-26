@@ -1,5 +1,5 @@
 .HomePageHeader {
-    height: 95vh;
+    height: 90vh;
 }
 
 @media screen and (max-width: 1024px) {
@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 768px) {
     .HomePageHeader {
-    height: 75vh;
+    height: 55vh;
 }
 
     .Tools {
