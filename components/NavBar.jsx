@@ -22,17 +22,33 @@ const NavBar = () => {
         });
     };
 
-    useEffect(() => {
-        setViewMenu(false); // When the dynamic route change reset the state
-    }, [dynamicRoute]);
-
+    useEffect(() => {}, []);
     let classes =
-        "bg-bgColor mx-auto flex lg:px-20 px-12 items-center justify-start pt-7 gap-8";
+        "bg-bgColor mx-auto flex lg:px-20 px-12 items-start justify-start pt-7 gap-8";
 
     const mobileClasses =
         "bg-bgColor flex flex-col lg:px-20 px-12 pt-7 justify-end items-end";
 
-    return width > 768 ? (
+    useEffect(() => {
+        setViewMenu(false); // When the dynamic route change reset the state
+    }, [dynamicRoute]);
+
+    return width < 768 ? (
+        <nav className={mobileClasses}>
+            <FontAwesomeIcon
+                icon={faBars}
+                className="text-white text-4xl mb-8 cursor-pointer hover:scale-90 py-2 pl-2 hover:transition-all duration-200	"
+                onClick={showMenu}
+            />
+            {viewMenu ? (
+                <div className="flex flex-col text-right gap-5 text-white text-lg">
+                    <Link href="/">Home</Link>
+                    <Link href="/dev-work">Dev Work</Link>
+                    <Link href="/design-work">Design Work</Link>
+                </div>
+            ) : null}
+        </nav>
+    ) : (
         <nav className={classes}>
             <div className="flex items-center text-white gap-8">
                 <Link href="/">
@@ -48,21 +64,6 @@ const NavBar = () => {
                 <Link href="/dev-work">Dev Work</Link>
                 <Link href="/design-work">Design Work</Link>
             </div>
-        </nav>
-    ) : (
-        <nav className={mobileClasses}>
-            <FontAwesomeIcon
-                icon={faBars}
-                className="text-white text-4xl mb-8 cursor-pointer hover:scale-90 py-2 pl-2 hover:transition-all duration-200	"
-                onClick={showMenu}
-            />
-            {viewMenu ? (
-                <div className="flex flex-col text-right gap-5 text-white text-lg">
-                    <Link href="/">Home</Link>
-                    <Link href="/dev-work">Dev Work</Link>
-                    <Link href="/design-work">Design Work</Link>
-                </div>
-            ) : null}
         </nav>
     );
 
