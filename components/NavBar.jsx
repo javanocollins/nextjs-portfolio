@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,13 +14,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const NavBar = () => {
     const { height, width } = useWindowDimensions();
     const [viewMenu, setViewMenu] = useState(false);
-
+    const dynamicRoute = useRouter().asPath;
 
     const showMenu = () => {
         setViewMenu((prevState) => {
             return !prevState;
         });
     };
+
+    useEffect(() => {
+        setViewMenu(false); // When the dynamic route change reset the state
+    }, [dynamicRoute]);
 
     let classes =
         "bg-bgColor mx-auto flex lg:px-20 px-12 items-center justify-between pt-7 gap-8";
