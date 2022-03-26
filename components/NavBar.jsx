@@ -50,7 +50,7 @@ const NavBar = () => {
             </div>
         </nav>
     ) : (
-        <div className={mobileClasses}>
+        <nav className={mobileClasses}>
             <FontAwesomeIcon
                 icon={faBars}
                 className="text-white text-4xl mb-8 cursor-pointer hover:scale-90 py-2 pl-2 hover:transition-all duration-200	"
@@ -63,7 +63,7 @@ const NavBar = () => {
                     <Link href="/design-work">Design Work</Link>
                 </div>
             ) : null}
-        </div>
+        </nav>
     );
 
     return null;
