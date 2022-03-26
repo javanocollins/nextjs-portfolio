@@ -20,29 +20,32 @@ const NavBar = () => {
         });
     };
 
+    const classes =
+        "bg-bgColor mx-auto flex lg:px-20 px-12 items-center justify-between pt-7 gap-8";
     if (width > 768) {
-        return (
-            <nav className="bg-bgColor mx-auto flex lg:px-20 px-12 items-center justify-between pt-7 gap-8">
-                <div className="flex items-center text-white gap-8">
-                    <Link href="/">
-                        <Image
-                            className="cursor-pointer"
-                            src={logo}
-                            alt="JD Logo"
-                            width={50}
-                            height={50}
-                        />
-                    </Link>
-                    <Link href="/">Home</Link>
-                    <Link href="/dev-work">Dev Work</Link>
-                    <Link href="/design-work">Design Work</Link>
-                </div>
-            </nav>
-        );
+        classes =
+            "bg-bgColor flex flex-col lg:px-20 px-12 pt-7 justify-end items-end";
     }
 
-    return (
-        <nav className="bg-bgColor flex flex-col lg:px-20 px-12 pt-7 justify-end items-end">
+    return width > 768 ? (
+        <nav className={classes}>
+            <div className="flex items-center text-white gap-8">
+                <Link href="/">
+                    <Image
+                        className="cursor-pointer"
+                        src={logo}
+                        alt="JD Logo"
+                        width={50}
+                        height={50}
+                    />
+                </Link>
+                <Link href="/">Home</Link>
+                <Link href="/dev-work">Dev Work</Link>
+                <Link href="/design-work">Design Work</Link>
+            </div>
+        </nav>
+    ) : (
+        <nav className={classes}>
             <FontAwesomeIcon
                 icon={faBars}
                 className="text-white text-4xl mb-8 cursor-pointer hover:scale-90 py-2 pl-2 hover:transition-all duration-200	"
@@ -57,6 +60,8 @@ const NavBar = () => {
             ) : null}
         </nav>
     );
+
+    return null;
 };
 
 export default NavBar;
