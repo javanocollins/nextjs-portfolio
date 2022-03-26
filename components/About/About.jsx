@@ -6,7 +6,7 @@ import styles from "./About.module.css";
 const About = () => {
   return (
       <div>
-          <h2 className="text-6xl mb-8 uppercase font-medium text-orange-600">
+          <h2 className="lg:text-5xl text-3xl mb-5 uppercase font-medium text-orange-600">
               About Me
           </h2>
 

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { icon } from "@fortawesome/fontawesome-svg-core";
 
 // Styles
-import styles from './Specializations.module.css';
+import styles from "./Specializations.module.css";
 
 const Specializations = ({ devIcon, designIcon }) => {
     const classes = `bg-white h-auto text-center flex flex-col items-center py-20 px-8`;
@@ -16,9 +16,11 @@ const Specializations = ({ devIcon, designIcon }) => {
                     icon={devIcon}
                     className="text-red-600 text-5xl mb-3"
                 />
-                <h2 className="pb-5 text-3xl font-bold">Developer</h2>
+                <h2 className="pb-5 lg:text-3xl text-2xl font-bold">
+                    Developer
+                </h2>
 
-                <p className="w-full p-5 text-lg">
+                <p className="w-full lg:p-5 text-lg">
                     I am a Software Engineer that's always open to learning new
                     technologies. I ensure that applications are beautiful,
                     performant, scalable, and mobile responsive.
@@ -40,8 +42,10 @@ const Specializations = ({ devIcon, designIcon }) => {
                     icon={designIcon}
                     className="text-red-600 text-5xl mb-3"
                 />
-                <h2 className="pb-5 text-3xl font-bold">Designer</h2>
-                <p className="w-full p-5 text-lg">
+                <h2 className="pb-5 lg:text-3xl text-2xl font-bold">
+                    Designer
+                </h2>
+                <p className="w-full lg:p-5 text-lg">
                     I have an extensive background in graphic design. I
                     specialize in mobile and web design, and logos.
                 </p>
