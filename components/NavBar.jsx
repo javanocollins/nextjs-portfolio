@@ -27,7 +27,7 @@ const NavBar = () => {
     }, [dynamicRoute]);
 
     let classes =
-        "bg-bgColor mx-auto flex lg:px-20 px-12 items-center justify-between pt-7 gap-8";
+        "bg-bgColor mx-auto flex lg:px-20 px-12 items-center justify-start pt-7 gap-8";
 
     const mobileClasses =
         "bg-bgColor flex flex-col lg:px-20 px-12 pt-7 justify-end items-end";
