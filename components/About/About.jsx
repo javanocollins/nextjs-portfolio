@@ -6,11 +6,11 @@ import styles from "./About.module.css";
 const About = () => {
   return (
       <div>
-          <h2 className="lg:text-5xl text-3xl mb-5 uppercase font-medium text-orange-600">
+          <h2 className="lg:text-5xl text-4xl mb-5 uppercase font-medium text-orange-600">
               About Me
           </h2>
 
-          <p className="mb-5 text-xl">
+          <p className="mb-5 md:text-xl text-lg leading-8">
               I'm Javano Collins, a current Software Engineer at{" "}
               <a
                   href="https://platoalpha.com"
@@ -33,7 +33,7 @@ const About = () => {
               technologies, and find a academic and career interest in Machine
               Learning.
           </p>
-          <p className="text-xl">
+          <p className="md:text-xl text-lg leading-8">
               Additional things about me: <br />
               I am a boxer, <br />I am an avid reader (subjects: finance,
               psychology, history, stem) <br />

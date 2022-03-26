@@ -20,13 +20,15 @@ const Specializations = ({ devIcon, designIcon }) => {
                     Developer
                 </h2>
 
-                <p className="w-full lg:p-5 text-lg">
+                <p className="w-full lg:p-5 text-lg leading-8">
                     I am a Software Engineer that's always open to learning new
                     technologies. I ensure that applications are beautiful,
                     performant, scalable, and mobile responsive.
                 </p>
 
-                <p className="text-xl text-red-600 font-bold p-2">Tools</p>
+                <p className="text-xl text-red-600 font-bold p-2">
+                    Tools
+                </p>
                 <ul className="text-lg">
                     <li>JavaScript</li>
                     <li>React</li>
@@ -45,7 +47,7 @@ const Specializations = ({ devIcon, designIcon }) => {
                 <h2 className="pb-5 lg:text-3xl text-2xl font-bold">
                     Designer
                 </h2>
-                <p className="w-full lg:p-5 text-lg">
+                <p className="w-full lg:p-5 text-lg leading-8">
                     I have an extensive background in graphic design. I
                     specialize in mobile and web design, and logos.
                 </p>

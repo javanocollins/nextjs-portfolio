@@ -3,11 +3,11 @@ import React from "react";
 const Contact = () => {
     return (
         <div>
-            <h2 className="lg:text-5xl text-3xl mb-5 uppercase font-medium text-orange-600">
+            <h2 className="lg:text-5xl text-4xl mb-5 uppercase font-medium text-orange-600">
                 Contact
             </h2>
             <div className="mb-5">
-                <p className="text-xl">
+                <p className="md:text-xl text-lg leading-8">
                     I'm very easy to reach via{" "}
                     <a
                         href="https://www.linkedin.com/in/javano-collins/"
@@ -30,7 +30,7 @@ const Contact = () => {
             </div>
 
             <div>
-                <p className="text-xl">
+                <p className="md:text-xl text-lg">
                     Email:{" "}
                     <a
                         href="mailto:javanocollins@gmail.com"
