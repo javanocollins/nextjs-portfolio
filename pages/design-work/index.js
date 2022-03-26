@@ -20,17 +20,17 @@ const Index = () => {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <header className="px-0 md:px-20 pt-20">
-                <h1 className="text-5xl md:text-7xl mb-3 text-orange-500 text-center">
+                <h1 className="lg:text-5xl text-3xl md:text-7xl mb-3 text-orange-500 text-center">
                     Design Work
                 </h1>
-                <p className="text-center text-white">
+                <p className="text-center text-sm text-white">
                     Have a look at my designs.
                 </p>
             </header>
             <main className="lg:px-20 px-12 lg:pt-20 pt-12">
                 <div className="flex mx-auto justify-center place-items-center items-center gap-x-3 text-white">
                     <p
-                        className={`text-4xl text-center mb-8 cursor-pointer ${
+                        className={`lg:text-4xl text-2xl text-center mb-8 cursor-pointer ${
                             view === 0 ? "font-bold" : "opacity-50"
                         }`}
                         onClick={() => setView(0)}
@@ -38,7 +38,7 @@ const Index = () => {
                         Web Designs
                     </p>
                     <p
-                        className={`text-4xl text-center mb-8 cursor-pointer ${
+                        className={`lg:text-4xl text-2xl text-center mb-8 cursor-pointer ${
                             view === 1 ? "font-bold" : "opacity-50"
                         }`}
                         onClick={() => setView(1)}

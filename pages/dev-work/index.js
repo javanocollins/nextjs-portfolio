@@ -17,8 +17,10 @@ const Index = () => {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <header className="px-20 pt-20 lg:mb-16 mb-5 text-center">
-                <h1 className="lg:text-7xl text-6xl mb-3 text-orange-500">Dev Work</h1>
-                <p className="text-white">
+                <h1 className="lg:text-5xl text-3xl mb-3 text-orange-500">
+                    Dev Work
+                </h1>
+                <p className="text-white text-sm">
                     Have a look at my development experience.
                 </p>
             </header>
@@ -46,7 +48,9 @@ const Index = () => {
                                 triblock HR
                             </a>
                             <p className="text-lg mt-2">
-                                > Developed document management that allows HR administrators to fully manage company and employee documents.
+                                > Developed document management that allows HR
+                                administrators to fully manage company and
+                                employee documents.
                             </p>
                             <p className="text-lg mt-2">
                                 > Developed employee allowance feature.
@@ -77,10 +81,13 @@ const Index = () => {
                                 results).
                             </p>
                             <p className="text-lg mt-2">
-                                > Developed integrated calendar that enables administrators to view all booked appointments on a calendar.
+                                > Developed integrated calendar that enables
+                                administrators to view all booked appointments
+                                on a calendar.
                             </p>
                             <p className="text-lg mt-2">
-                                > Developed UI error handling using Yup validations.
+                                > Developed UI error handling using Yup
+                                validations.
                             </p>
                         </div>
                     </div>
