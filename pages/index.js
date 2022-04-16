@@ -37,8 +37,7 @@ export default function Home() {
             <header
                 className={`${styles.HomePageHeader} bg-bgColor flex flex-col lg:px-20 px-12 items-start justify-center mx-auto`}
             >
-                <Image src={hello} width={80} height={40} rel="noreferrer" />
-                <div className="flex lg:text-7xl text-6xl font-medium mb-1 flex-wrap">
+                <div className="flex lg:text-7xl text-6xl font-medium mb-2 flex-wrap">
                     <h1 className="text-white">I'm Javano Collins.&nbsp;</h1>
                     <div className={`${styles.TypeWriter}`}>
                         <Typewriter
@@ -63,10 +62,6 @@ export default function Home() {
                         />
                     </div>
                 </div>
-
-                <p className="mb-3 text-white">
-                    I specialize in Web Development.
-                </p>
 
                 <Button
                     link="/dev-work"
