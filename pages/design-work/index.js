@@ -8,7 +8,7 @@ import WebDesigns from "../../components/WebDesigns/WebDesigns";
 import AppHead from "../../components/AppHead/AppHead";
 
 const Index = () => {
-    const [view, setView] = useState(0);
+    const [view, setView] = useState(1);
 
     return (
         <div className={`bg-bgColor`}>
@@ -24,14 +24,14 @@ const Index = () => {
             </header>
             <main className="lg:px-20 px-12 lg:pt-20 pt-12">
                 <div className="flex mx-auto justify-center place-items-center items-center gap-x-3 text-white">
-                    <p
+                    {/* <p
                         className={`lg:text-4xl text-2xl text-center mb-8 cursor-pointer ${
                             view === 0 ? "font-bold" : "opacity-50"
                         }`}
                         onClick={() => setView(0)}
                     >
                         Web Designs
-                    </p>
+                    </p> */}
                     <p
                         className={`lg:text-4xl text-2xl text-center mb-8 cursor-pointer ${
                             view === 1 ? "font-bold" : "opacity-50"
