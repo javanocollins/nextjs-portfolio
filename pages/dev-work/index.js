@@ -39,7 +39,7 @@ const Index = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                triblock HR
+                                TriblockHR
                             </a>
                             <p className="text-lg mt-2">
                                 > Developed document management that allows HR
@@ -48,6 +48,9 @@ const Index = () => {
                             </p>
                             <p className="text-lg mt-2">
                                 > Developed employee allowance feature.
+                            </p>
+                            <p className="text-lg mt-2">
+                                > Developed performance management feature.
                             </p>
                         </div>
                         <div className="mb-5">
