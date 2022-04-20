@@ -24,7 +24,7 @@ const NavBar = () => {
 
     useEffect(() => {}, []);
     let classes =
-        "bg-bgColor mx-auto flex lg:px-20 px-12 items-start justify-start pt-7 gap-8";
+        "bg-bgColor flex lg:px-20 px-12 items-start justify-start pt-7 gap-8";
 
     const mobileClasses =
         "bg-bgColor flex flex-col lg:px-20 px-12 pt-7 justify-end items-end";
@@ -33,7 +33,7 @@ const NavBar = () => {
         setViewMenu(false); // When the dynamic route change reset the state
     }, [dynamicRoute]);
 
-    if (width < 768) {
+    if (typeof window !== "undefined" && window.innerWidth < 768) {
         return (
             <nav className={mobileClasses}>
                 <FontAwesomeIcon
@@ -52,28 +52,24 @@ const NavBar = () => {
         );
     }
 
-    if (width > 768) {
-        return (
-            <nav className={classes}>
-                <div className="flex items-center text-white gap-8">
-                    <Link href="/">
-                        <Image
-                            className="cursor-pointer"
-                            src={logo}
-                            alt="JD Logo"
-                            width={50}
-                            height={50}
-                        />
-                    </Link>
-                    <Link href="/">Home</Link>
-                    <Link href="/dev-work">Dev Work</Link>
-                    <Link href="/design-work">Design Work</Link>
-                </div>
-            </nav>
-        );
-    }
-
-    return null;
+    return (
+        <nav className={classes}>
+            <div className="flex items-center text-white gap-8">
+                <Link href="/">
+                    <Image
+                        className="cursor-pointer"
+                        src={logo}
+                        alt="JD Logo"
+                        width={50}
+                        height={50}
+                    />
+                </Link>
+                <Link href="/">Home</Link>
+                <Link href="/dev-work">Dev Work</Link>
+                <Link href="/design-work">Design Work</Link>
+            </div>
+        </nav>
+    );
 };
 
 export default NavBar;
