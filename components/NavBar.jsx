@@ -33,12 +33,12 @@ const NavBar = () => {
         setViewMenu(false); // When the dynamic route change reset the state
     }, [dynamicRoute]);
 
-    if (typeof window !== "undefined" && window.innerWidth < 768) {
+    if (typeof window !== "undefined" && window.innerWidth <= 768) {
         return (
             <nav className={mobileClasses}>
                 <FontAwesomeIcon
                     icon={faBars}
-                    className="text-white text-4xl mb-8 cursor-pointer hover:scale-90 py-2 pl-2 hover:transition-all duration-200	"
+                    className="flex flex-col justify-end items-end text-right text-white text-4xl mb-8 cursor-pointer hover:scale-90 py-2 pl-2 hover:transition-all duration-200	"
                     onClick={showMenu}
                 />
                 {viewMenu ? (
@@ -52,24 +52,27 @@ const NavBar = () => {
         );
     }
 
-    return (
-        <nav className={classes}>
-            <div className="flex items-center text-white gap-8">
-                <Link href="/">
-                    <Image
-                        className="cursor-pointer"
-                        src={logo}
-                        alt="JD Logo"
-                        width={50}
-                        height={50}
-                    />
-                </Link>
-                <Link href="/">Home</Link>
-                <Link href="/dev-work">Dev Work</Link>
-                <Link href="/design-work">Design Work</Link>
-            </div>
-        </nav>
-    );
+    if (typeof window !== "undefined" && window.innerWidth >= 769) {
+        return (
+            <nav className={classes}>
+                <div className="flex items-center text-white gap-8">
+                    <Link href="/">
+                        <Image
+                            className="cursor-pointer"
+                            src={logo}
+                            alt="JD Logo"
+                            width={50}
+                            height={50}
+                        />
+                    </Link>
+                    <Link href="/">Home</Link>
+                    <Link href="/dev-work">Dev Work</Link>
+                    <Link href="/design-work">Design Work</Link>
+                </div>
+            </nav>
+        );
+    }
+    return null;
 };
 
 export default NavBar;
